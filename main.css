@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0 2%;
+}
+
+.list {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .list-title {
+
+} */
+
+.list-link {
+  color: #359740;
+  font-weight: bold;
+  padding: 15px;
+  border: 1px solid #a0a0a0;
+  border-radius: 10px;
+}
+
+.box {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 300px 300px;
+  gap: 20px;
+}
+
+.box-div-1 {
+  background-color: #EAF1EB;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.1s  linear;
+  position: relative;
+
+  p {
+    color: #70737C;
+    width: 70%;
+  }
+}
+
+.box-div-2 {
+  background-color: #EFF2F8;
+  grid-column: 3/4;
+  grid-row: 1/3;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.1s  linear;
+  position: relative;
+
+  .content-inner {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  h2 {
+    padding-right: 150px;
+  }
+
+  p {
+    width: 100%;
+    letter-spacing: 2px;
+    padding-right: 20px;
+  }
+}
+
+.box-div-3 {
+  background-color: #EFF2F8;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.1s  linear;
+  position: relative;
+}
+
+.box-div-4 {
+  background-color: #EFF2F8;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.1s  linear;
+  position: relative;
+}
+
+.box-div-1:hover, .box-div-2:hover, .box-div-3:hover, .box-div-4:hover {
+  transform: scale(1.01);
+  transition: all 0.1s  linear;
+}
+
+.content-inner {
+  width: 70%;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+
+}
+
+.time-show {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  span {
+    color: #70737C;
+  }
+}
+
+.btn {
+  width: 130px;
+  height: 50px;
+  background-color: white;
+  color: #359740;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ad-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
